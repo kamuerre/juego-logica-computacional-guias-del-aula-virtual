@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía interactiva - Lógica computacional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="encabezado-principal">
+    <div>
+      <p class="eyebrow">Lógica computacional</p>
+      <h1>Guía interactiva · Unidad 1</h1>
+      <p class="subtitulo">Resolvé los ejercicios, verificá tus respuestas y comparalas con la resolución esperada.</p>
+    </div>
+    <div class="acciones-header">
+      <button id="btnCorregirTodo" class="btn btn-primario">Corregir todo</button>
+      <button id="btnReiniciar" class="btn btn-secundario">Reiniciar</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel-lateral">
+      <div class="tarjeta sticky">
+        <h2>Progreso</h2>
+        <div class="barra-progreso">
+          <div id="barraProgresoInterna"></div>
+        </div>
+        <p id="textoProgreso">0% completado</p>
+        <ul class="lista-resumen">
+          <li><a href="#ej1">Ejercicio 1</a></li>
+          <li><a href="#ej2">Ejercicio 2</a></li>
+          <li><a href="#ej3">Ejercicio 3</a></li>
+          <li><a href="#ej4">Ejercicio 4</a></li>
+          <li><a href="#ej5">Ejercicio 5</a></li>
+          <li><a href="#ej6">Ejercicio 6</a></li>
+        </ul>
+        <div class="fuente-box">
+          <p><strong>Basado en:</strong></p>
+          <p>Guía de ejercicios y archivo de respuestas provistos por vos.</p>
+        </div>
+      </div>
+    </aside>
+
+    <section class="contenido">
+      <section class="tarjeta introduccion">
+        <h2>Cómo usar esta guía</h2>
+        <ol>
+          <li>Completá cada ejercicio.</li>
+          <li>Presioná <strong>Corregir</strong> en el bloque que quieras revisar.</li>
+          <li>Vas a ver tu resultado y la respuesta esperada.</li>
+        </ol>
+        <p class="nota">En el ejercicio 6 no hay una única demostración; por eso dejé un espacio de práctica y una observación final.</p>
+      </section>
+
+      <section id="ej1" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 1</p>
+            <h2>Proposiciones lógicas</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej1">Corregir</button>
+        </div>
+        <p>Marcá cuáles de los siguientes enunciados son proposiciones lógicas.</p>
+        <div class="grid-opciones" id="contenedorEj1"></div>
+        <div class="resultado" id="resultadoEj1"></div>
+      </section>
+
+      <section id="ej2" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 2</p>
+            <h2>Condicionales</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej2">Corregir</button>
+        </div>
+        <p>Indicá cuáles son condicionales y, cuando corresponda, escribí la forma “Si…, entonces…”, antecedente y consecuente.</p>
+        <div id="contenedorEj2"></div>
+        <div class="resultado" id="resultadoEj2"></div>
+      </section>
+
+      <section id="ej3" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 3</p>
+            <h2>Análisis de valor de verdad</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej3">Corregir</button>
+        </div>
+        <div id="contenedorEj3"></div>
+        <div class="resultado" id="resultadoEj3"></div>
+      </section>
+
+      <section id="ej4" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 4</p>
+            <h2>Tautología, contradicción o contingencia</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej4">Corregir</button>
+        </div>
+        <div id="contenedorEj4"></div>
+        <div class="resultado" id="resultadoEj4"></div>
+      </section>
+
+      <section id="ej5" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 5</p>
+            <h2>Simplificación con leyes lógicas</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej5">Corregir</button>
+        </div>
+        <div id="contenedorEj5"></div>
+        <div class="resultado" id="resultadoEj5"></div>
+      </section>
+
+      <section id="ej6" class="tarjeta ejercicio">
+        <div class="titulo-ejercicio">
+          <div>
+            <p class="numero">Ejercicio 6</p>
+            <h2>Demostración de tautologías</h2>
+          </div>
+          <button class="btn btn-primario" data-corrige="ej6">Mostrar observación</button>
+        </div>
+        <p>Escribí tu desarrollo. Este bloque no se corrige automáticamente porque puede resolverse de varias maneras válidas.</p>
+        <div id="contenedorEj6"></div>
+        <div class="resultado" id="resultadoEj6"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Guía interactiva armada en HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
